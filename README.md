@@ -1,3 +1,15 @@
+このリポジトリは本家から vscode 拡張機能も開発しやすいように zenn-vscode-extension リポジトリもサブモジュール化しパッケージの中に含めている。
+
+以下でクローンする
+
+```bash
+git clone git@github.com:senkenn/zenn-editor.git --recurse-submodules
+```
+
+これ移行は本家の README.md
+
+---
+
 ![Zenn Editor](https://user-images.githubusercontent.com/34590683/91540859-60e06780-e956-11ea-9762-0acac2b7c4c5.png)
 
 このリポジトリは、主に Zenn の Markdown に関するパッケージをまとめて管理しています。
