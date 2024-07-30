@@ -11,9 +11,11 @@
     {
       "name": "Run Web Extension",
       "type": "pwa-extensionHost",
+      "debugWebviews": true,
       "debugWebWorkerHost": true,
       "request": "launch",
       "args": [
+        "--disable-extensions",
         "--extensionDevelopmentPath=${workspaceFolder}/packages/zenn-vscode-extension",
         "--extensionDevelopmentKind=web",
         "${workspaceFolder}/packages/zenn-vscode-extension/examples"
