@@ -7,6 +7,36 @@
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "port": 9229
+    },
+    {
+      "name": "Run Web Extension",
+      "type": "pwa-extensionHost",
+      "debugWebWorkerHost": true,
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/packages/zenn-vscode-extension",
+        "--extensionDevelopmentKind=web",
+        "${workspaceFolder}/packages/zenn-vscode-extension/examples"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/packages/zenn-vscode-extension/dist/web/**/*.js"
+      ],
+      "preLaunchTask": "Watch Web"
+    },
+    {
+      "name": "Extension Tests",
+      "type": "extensionHost",
+      "debugWebWorkerHost": true,
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/packages/zenn-vscode-extension",
+        "--extensionDevelopmentKind=web",
+        "--extensionTestsPath=${workspaceFolder}/packages/zenn-vscode-extension/dist/web/test/suite/index"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/packages/zenn-vscode-extension/dist/web/**/*.js"
+      ],
+      "preLaunchTask": "Watch Web"
     }
   ]
 }
