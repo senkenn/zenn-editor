@@ -1,0 +1,3 @@
+[submodule "packages/zenn-vscode-extension"]
+	path = packages/zenn-vscode-extension
+	url = git@github.com:senkenn/zenn-vscode-extension.git
