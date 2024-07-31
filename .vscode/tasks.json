@@ -16,7 +16,7 @@
     {
       "label": "Watch Web",
       "type": "shell",
-      "command": "pnpm -F zenn-preview watch-web",
+      "command": "pnpm build && pnpm -F zenn-preview watch-web",
       "group": "build",
       "isBackground": true,
       "problemMatcher": ["$ts-webpack-watch", "$tslint-webpack-watch"]
